@@ -93,7 +93,7 @@
                 <div
                   class="browser-address-bar font-sans-xs text-muted text-center px-4 py-0.5 rounded bg-white overflow-hidden text-truncate"
                   style="max-width: 50%; font-size: 0.75rem;">
-                  edu-ai-dashboard.com
+                  https://edu-ai-blond.vercel.app/
                 </div>
                 <div style="width: 30px;"></div>
               </div>
@@ -121,7 +121,7 @@
                   <!-- Header -->
                   <header class="d-flex justify-content-between align-items-center mb-3">
                     <div>
-                      <h6 class="fw-bold mb-0 text-white" style="font-size: 0.95rem;">Welcome back, Sarah!</h6>
+                      <h6 class="fw-bold mb-0 text-white" style="font-size: 0.95rem;">Welcome back, Parjo!</h6>
                     </div>
                     <div class="d-flex align-items-center gap-2">
                       <i class="bi bi-search text-white-50 cursor-pointer"></i>

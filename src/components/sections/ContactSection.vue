@@ -50,19 +50,28 @@
               </div>
             </div>
 
-            <!-- Card 3: Support Hours -->
-            <div class="contact-info-card d-flex align-items-start gap-3 p-4 border rounded-4">
-              <div
-                class="info-icon bg-yellow-light text-yellow-dark d-flex align-items-center justify-content-center shadow-sm">
-                <i class="bi bi-instagram"></i>
+            <a href="https://instagram.com/eduai.id" target="_blank" class="text-decoration-none">
+              <div class="contact-info-card d-flex align-items-start gap-3 p-4 border rounded-4">
+
+                <div
+                  class="info-icon bg-yellow-light text-yellow-dark d-flex align-items-center justify-content-center shadow-sm">
+                  <i class="bi bi-instagram"></i>
+                </div>
+
+                <div>
+                  <h5 class="fw-bold text-dark mb-1">Instagram</h5>
+
+                  <p class="text-dark-50 fw-semibold mb-1" style="font-size: 0.95rem;">
+                    @eduai.id
+                  </p>
+
+                  <span class="text-muted font-xs">
+                    Layanan konsultasi AI & integrasi API tim.
+                  </span>
+                </div>
+
               </div>
-              <div>
-                <h5 class="fw-bold text-dark mb-1">Instagram</h5>
-                <p class="text-dark-50 fw-semibold mb-1" style="font-size: 0.95rem;">@edu.ai
-                </p>
-                <span class="text-muted font-xs">Layanan konsultasi AI & integrasi API tim.</span>
-              </div>
-            </div>
+            </a>
 
           </div>
         </div>

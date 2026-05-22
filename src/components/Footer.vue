@@ -15,7 +15,7 @@
             otomatis, dan merancang jadwal belajar paling optimal.
           </p>
           <div class="d-flex gap-3">
-            <a href="#" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/eduai.id" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
             <!-- <a href="#" class="social-icon-btn"><i class="bi bi-tiktok"></i></a> -->
             <!-- <a href="#" class="social-icon-btn"><i class="bi bi-github"></i></a>
             <a href="#" class="social-icon-btn"><i class="bi bi-youtube"></i></a> -->
@@ -71,7 +71,7 @@
         </div>
         <div class="col-md-6 text-center text-md-end text-white-50 mt-2 mt-md-0 font-sans-xs">
           <a href="#" class="footer-link me-3">Syarat & Ketentuan</a>
-          <a href="#" class="footer-link">Hubungi Kami</a>
+          <a href="https://www.instagram.com/eduai.id" class="footer-link">Hubungi Kami</a>
         </div>
       </div>
     </div>
