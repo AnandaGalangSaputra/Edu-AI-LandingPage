@@ -2,7 +2,11 @@
 import HeroSection from '../components/sections/HeroSection.vue'
 import SponsorSection from '../components/sections/SponsorSection.vue'
 import FeaturesSection from '../components/sections/FeaturesSection.vue'
+import HowItWorksSection from '../components/sections/HowItWorksSection.vue'
+import TestimonialsSection from '../components/sections/TestimonialsSection.vue'
 import PricingSection from '../components/sections/PricingSection.vue'
+import FAQSection from '../components/sections/FAQSection.vue'
+import CTASection from '../components/sections/CTASection.vue'
 import ContactSection from '../components/sections/ContactSection.vue'
 </script>
 
@@ -20,8 +24,23 @@ import ContactSection from '../components/sections/ContactSection.vue'
     <!-- Features Section -->
     <FeaturesSection />
 
+    <!-- How It Works Section -->
+    <HowItWorksSection />
+
+    <!-- Divider accent line -->
+    <div class="divider-accent"></div>
+
+    <!-- Testimonials Section -->
+    <TestimonialsSection />
+
     <!-- Pricing Section -->
     <PricingSection />
+
+    <!-- FAQ Section -->
+    <FAQSection />
+
+    <!-- CTA Section -->
+    <CTASection />
 
     <!-- Contact Section -->
     <ContactSection />

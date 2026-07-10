@@ -21,10 +21,22 @@
             <a class="nav-link-custom nav-link" href="#home" @click="handleNavClick($event, 'home')">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link-custom nav-link" href="#pricing" @click="handleNavClick($event, 'pricing')">Pricing</a>
+            <a class="nav-link-custom nav-link" href="#features" @click="handleNavClick($event, 'features')">Fitur</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link-custom nav-link" href="#contact" @click="handleNavClick($event, 'contact')">Contact</a>
+            <a class="nav-link-custom nav-link" href="#how-it-works" @click="handleNavClick($event, 'how-it-works')">Cara Kerja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom nav-link" href="#testimonials" @click="handleNavClick($event, 'testimonials')">Testimoni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom nav-link" href="#pricing" @click="handleNavClick($event, 'pricing')">Harga</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom nav-link" href="#faq" @click="handleNavClick($event, 'faq')">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom nav-link" href="#contact" @click="handleNavClick($event, 'contact')">Kontak</a>
           </li>
         </ul>
         <div class="d-flex justify-content-center">

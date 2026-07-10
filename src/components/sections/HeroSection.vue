@@ -1,17 +1,24 @@
 <template>
   <section id="home"
-    class="hero-section bg-glow-section py-5 d-flex align-items-center min-vh-100 position-relative overflow-hidden">
+    class="hero-section bg-glow-section py-5 d-flex flex-column align-items-center min-vh-100 position-relative overflow-hidden">
     <!-- Glow effects background -->
     <div class="glow-orb glow-orb-1"></div>
     <div class="glow-orb glow-orb-2"></div>
-
-    <div class="container pt-5">
+    
+    <div class="container pt-5 position-relative z-1 flex-grow-1 d-flex flex-column justify-content-center">
       <div class="row align-items-center g-5 pt-4">
 
         <!-- Left Text Content -->
         <div class="col-lg-6 col-12 text-start">
           <div class="animate-fade-in-up">
-            <h1 class="hero-title mb-5">
+            
+            <!-- Capsule Badge -->
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-pill bg-primary-light text-primary-purple border border-violet-10 mb-4 font-sans-xs fw-bold logo-capsule-badge">
+              <span class="badge-dot-pulse"></span>
+              <span>✨ Platform Belajar Pintar No. 1 di Indonesia</span>
+            </div>
+
+            <h1 class="hero-title mb-4">
               Edu AI: Belajar<br>
               Lebih Cepat,<br>
               Dengan Bantuan
@@ -24,7 +31,7 @@
               </span>
             </h1>
 
-            <p class="fs-5 text-muted mb-5 pe-lg-5 fw-normal lh-base">
+            <p class="fs-5 text-muted mb-4 pe-lg-5 fw-normal lh-base">
               Belajar jadi lebih terarah dengan penjelasan simpel, rangkuman otomatis, dan jadwal yang rapi.
             </p>
 
@@ -45,6 +52,24 @@
                 <span class="demo-text">Lihat demo</span>
               </a>
             </div>
+
+            <!-- Social Proof / Trust Badges -->
+            <div class="d-flex align-items-center gap-3 mt-5 pt-3 border-top border-light-2 social-proof-container">
+              <div class="avatar-group d-flex">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=64" alt="User 1" class="avatar-img" />
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=64" alt="User 2" class="avatar-img" />
+                <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=64" alt="User 3" class="avatar-img" />
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=64" alt="User 4" class="avatar-img" />
+              </div>
+              <div class="text-start">
+                <div class="d-flex align-items-center gap-1.5">
+                  <span class="fw-bold text-dark font-sans-sm" style="font-size: 0.95rem; font-family: var(--font-sans);">⭐ 4.9/5.0</span>
+                  <span class="text-muted font-sans-xs">(1,2k+ review)</span>
+                </div>
+                <p class="text-muted font-sans-xs m-0" style="font-size: 0.8rem;">Dipercaya oleh <strong>20.000+ pelajar</strong> di seluruh Indonesia</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -52,14 +77,26 @@
         <div class="col-lg-6 col-12">
           <div class="position-relative float-animation px-3 px-lg-0">
 
-            <!-- Floating badge top-left: Flag -->
-            <div class="floating-badge badge-top-left">
-              <i class="bi bi-flag-fill"></i>
+            <!-- Floating badge top-left: Rangkuman Instan -->
+            <div class="floating-badge badge-top-left-enhanced glass-panel d-flex align-items-center gap-2 py-2 px-3">
+              <div class="badge-icon-circle bg-success text-white d-flex align-items-center justify-content-center">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <div class="text-start">
+                <div class="fw-bold font-sans-xs text-dark" style="font-size: 0.75rem; line-height: 1.2;">Rangkuman AI</div>
+                <div class="text-muted-xs" style="font-size: 0.65rem;">Hanya 5 Detik</div>
+              </div>
             </div>
 
-            <!-- Floating badge top-right: Stack -->
-            <div class="floating-badge badge-top-right">
-              <i class="bi bi-database-fill"></i>
+            <!-- Floating badge top-right: AI Tutor -->
+            <div class="floating-badge badge-top-right-enhanced glass-panel d-flex align-items-center gap-2 py-2 px-3">
+              <div class="badge-icon-circle bg-violet text-white d-flex align-items-center justify-content-center">
+                <i class="bi bi-chat-dots-fill"></i>
+              </div>
+              <div class="text-start">
+                <div class="fw-bold font-sans-xs text-dark" style="font-size: 0.75rem; line-height: 1.2;">Tanya AI Tutor</div>
+                <div class="text-muted-xs" style="font-size: 0.65rem;">Respon Real-time</div>
+              </div>
             </div>
 
             <!-- Floating badge bottom-left: Active Users -->
@@ -199,6 +236,34 @@
         </div>
 
       </div>
+
+      <!-- Hero Stats bar at the bottom of the hero section -->
+      <div class="row justify-content-center mt-5 pt-4 border-top border-light-2 hero-stats-row">
+        <div class="col-lg-10 col-12">
+          <div class="hero-stats-bar glass-panel p-4 rounded-4 d-flex justify-content-around flex-wrap gap-4 text-center">
+            <div class="stat-item">
+              <h3 class="fw-extrabold text-primary-purple mb-1" style="font-size: 1.85rem;">50.000+</h3>
+              <p class="text-muted font-sans-xs mb-0 fw-semibold text-uppercase tracking-wider" style="font-size: 0.7rem;">Modul Dirangkum</p>
+            </div>
+            <div class="stat-divider d-none d-md-block" style="width: 1px; background: rgba(124, 58, 237, 0.15); height: 40px; align-self: center;"></div>
+            <div class="stat-item">
+              <h3 class="fw-extrabold text-primary-purple mb-1" style="font-size: 1.85rem;">98,4%</h3>
+              <p class="text-muted font-sans-xs mb-0 fw-semibold text-uppercase tracking-wider" style="font-size: 0.7rem;">Paham Lebih Cepat</p>
+            </div>
+            <div class="stat-divider d-none d-md-block" style="width: 1px; background: rgba(124, 58, 237, 0.15); height: 40px; align-self: center;"></div>
+            <div class="stat-item">
+              <h3 class="fw-extrabold text-primary-purple mb-1" style="font-size: 1.85rem;">20.000+</h3>
+              <p class="text-muted font-sans-xs mb-0 fw-semibold text-uppercase tracking-wider" style="font-size: 0.7rem;">Siswa Aktif</p>
+            </div>
+            <div class="stat-divider d-none d-md-block" style="width: 1px; background: rgba(124, 58, 237, 0.15); height: 40px; align-self: center;"></div>
+            <div class="stat-item">
+              <h3 class="fw-extrabold text-primary-purple mb-1" style="font-size: 1.85rem;">24/7</h3>
+              <p class="text-muted font-sans-xs mb-0 fw-semibold text-uppercase tracking-wider" style="font-size: 0.7rem;">Bantuan AI Tutor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>
@@ -211,7 +276,21 @@ const showDemoModal = () => {
 
 <style scoped>
 .hero-section {
-  padding-bottom: 7rem !important;
+  padding-bottom: 5rem !important;
+}
+
+/* Background dot grid pattern */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .glow-orb {
@@ -236,6 +315,68 @@ const showDemoModal = () => {
   background: rgba(251, 191, 36, 0.08);
   bottom: 10%;
   left: -5%;
+}
+
+/* Pulse Dot animation for Capsule Badge */
+.logo-capsule-badge {
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.05);
+}
+
+.badge-dot-pulse {
+  width: 8px;
+  height: 8px;
+  background-color: var(--brand-primary);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.badge-dot-pulse::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-primary);
+  border-radius: 50%;
+  animation: pulse-ring 1.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  80%, 100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Social Proof Avatar Grid */
+.avatar-group {
+  margin-right: 0.5rem;
+}
+
+.avatar-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.2px solid #ffffff;
+  margin-left: -12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.avatar-img:first-child {
+  margin-left: 0;
+}
+
+.avatar-img:hover {
+  transform: translateY(-4px) scale(1.15);
+  z-index: 10;
 }
 
 .play-demo-btn {
@@ -290,6 +431,66 @@ const showDemoModal = () => {
   height: auto;
 
   overflow: visible;
+}
+
+/* Enhanced Floating Badges layout */
+.badge-top-left-enhanced {
+  position: absolute;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  top: 18%;
+  left: -12%;
+  transform: rotate(-5deg);
+  animation: float-badge-1 6s ease-in-out infinite alternate;
+}
+
+.badge-top-right-enhanced {
+  position: absolute;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  top: 22%;
+  right: -12%;
+  transform: rotate(5deg);
+  animation: float-badge-2 7s ease-in-out infinite alternate;
+}
+
+.badge-icon-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.bg-violet {
+  background-color: var(--brand-primary);
+}
+
+@keyframes float-badge-1 {
+  0% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(-12px) rotate(-2deg);
+  }
+}
+
+@keyframes float-badge-2 {
+  0% {
+    transform: translateY(0) rotate(5deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(2deg);
+  }
 }
 
 /* Dashboard Dark Inner Mockup Styles */
@@ -414,6 +615,40 @@ const showDemoModal = () => {
   }
 }
 
+/* Stats Bar styling */
+.hero-stats-row {
+  border-color: rgba(124, 58, 237, 0.08) !important;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-stats-bar {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(124, 58, 237, 0.12);
+  box-shadow: 0 20px 45px rgba(124, 58, 237, 0.06);
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 160px;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+  .badge-top-left-enhanced {
+    left: -2%;
+    top: 10%;
+  }
+  .badge-top-right-enhanced {
+    right: -2%;
+    top: 12%;
+  }
+}
+
 @media (max-width: 767.98px) {
   .hero-section {
     padding-top: 6rem !important;
@@ -429,11 +664,13 @@ const showDemoModal = () => {
     left: 2%;
   }
 
-  .badge-top-left {
+  .badge-top-left-enhanced {
+    top: 5%;
     left: 2%;
   }
 
-  .badge-top-right {
+  .badge-top-right-enhanced {
+    top: 5%;
     right: 2%;
   }
 
@@ -456,6 +693,15 @@ const showDemoModal = () => {
     height: auto;
 
     overflow: visible;
+  }
+
+  .social-proof-container {
+    justify-content: center;
+  }
+
+  .logo-capsule-badge {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>
